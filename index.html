@@ -8,23 +8,36 @@
     </head>
 
     <body>
-        <h1>Rock Paper Scissors Game</h1>
-        <br><br>
+        <h1 id="gameTitle">Rock Paper Scissors Game</h1>
 
-        <h2>Player: <span id="playerScoreDisplay">0</span></h2><br>
-        <h2>Computer: <span id="computerScoreDisplay">0</span></h2><br>
-        <h2>Ties: <span id="tiesScoreDisplay">0</span></h2>
-        <br><br><br>
+        <div class="scoreContainer">
+            <div class="playerScoreDiv">
+                <h2>Player<br><span id="playerScoreDisplay">0</span></h2>
+            </div>
 
-        <button id="rock" onClick="playerChoice('rock')">Rock</button>
-        <button id="paper" onClick="playerChoice('paper')">Paper</button>
-        <button id="scissors" onClick="playerChoice('scissors')">Scissors</button>
-        <br><br> <br><br>
+            <div class="tiesScoreDiv">
+                <h2>Ties<br><span id="tiesScoreDisplay">0</span></h2>
+            </div>
 
-        <h2>Player's Choice: <span id="playerChoice"> </span></h2><br>
-        <h2>Computer's Choice: <span id="computerChoice"> </span></h2><br>
-        <h2>Result: <span id="result"></span></h2>
+            <div class="computerScoreDiv">
+                <h2>Computer<br><span id="computerScoreDisplay">0</span></h2>
+            </div>
+        </div>
+        
+        <div class="resultDisplay">
+            <h2>Result: <span id="result"></span></h2>
+        </div>
 
+        <div class="buttonsDiv">
+            <button id="rock" onClick="playerChoice('rock')">Rock</button>
+            <button id="paper" onClick="playerChoice('paper')">Paper</button>
+            <button id="scissors" onClick="playerChoice('scissors')">Scissors</button>
+        </div>
+
+        <div class="choiceDisplay">
+            <h2>Player's Choice: <span id="playerChoice"> </span></h2>
+            <h2>Computer's Choice: <span id="computerChoice"> </span></h2>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
