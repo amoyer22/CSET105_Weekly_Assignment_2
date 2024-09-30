@@ -15,11 +15,9 @@
             <div class="playerScoreDiv">
                 <h2>Player<br><span id="playerScoreDisplay">0</span></h2>
             </div>
-
             <div class="tiesScoreDiv">
                 <h2>Ties<br><span id="tiesScoreDisplay">0</span></h2>
             </div>
-
             <div class="computerScoreDiv">
                 <h2>Computer<br><span id="computerScoreDisplay">0</span></h2>
             </div>
@@ -37,11 +35,17 @@
             <button id="scissors" onClick="playerChoice('scissors')"> <img src="https://em-content.zobj.net/source/microsoft/407/scissors_2702-fe0f.png"> Scissors</button>
         </div>
 
-        
-        <div class="choiceDisplay">
-            <h2>Player's Choice: <span id="playerChoice"> </span></h2>
-            <h2>Computer's Choice: <span id="computerChoice"> </span></h2>
+
+        <div class="choiceContainer">
+            <div class="playerChoiceDiv">
+                <h2>Player's Choice<br><span id="playerChoice">...</span></h2>
+            </div>
+            <div class="computerChoiceDiv">
+                <h2>Computer's Choice<br><span id="computerChoice">...</span></h2>
+            </div>
         </div>
+
+
         <script src="script.js"></script>
     </body>
 </html>

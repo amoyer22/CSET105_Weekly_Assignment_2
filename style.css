@@ -8,7 +8,7 @@
 #gameTitle{
     font-size: 50px;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: #505050;
 }
@@ -63,6 +63,7 @@
 .resultDisplay{
     background-color: #a8a8a8;
     margin: auto;
+    height: 250px;
     width: 70%;
     padding: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -72,6 +73,10 @@
     border-left: 3px #505050 solid;
     border-right: 3px #505050 solid;
     border-bottom: 3px #505050 solid;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -96,4 +101,36 @@
     margin: auto;
     height: 50px;
     display: block;
+}
+
+
+.choiceContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 3px #505050 solid;
+    border-right: 3px #505050 solid;
+    border-bottom: 3px #505050 solid;
+}
+.playerChoiceDiv{
+    flex: 1;
+    height: 100px;
+    background-image: linear-gradient(#ffa5a5, #ff0000);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-right: 3px #505050 solid;
+}
+.computerChoiceDiv{
+    flex: 1;
+    height: 100px;
+    background-image: linear-gradient(#a6a6ff, #0000ff);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
