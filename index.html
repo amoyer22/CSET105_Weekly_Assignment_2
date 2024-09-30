@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper Scissors Game</title>
+        <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1 id="gameTitle">Rock Paper Scissors Game</h1>
+        <h1 id="gameTitle">Rock🪨 Paper📄 Scissors✂️</h1>
+
 
         <div class="scoreContainer">
             <div class="playerScoreDiv">
@@ -24,16 +25,19 @@
             </div>
         </div>
         
+
         <div class="resultDisplay">
-            <h2>Result: <span id="result"></span></h2>
+            <h2><span id="result">Choose an item...</span></h2>
         </div>
+
 
         <div class="buttonsDiv">
-            <button id="rock" onClick="playerChoice('rock')">Rock</button>
-            <button id="paper" onClick="playerChoice('paper')">Paper</button>
-            <button id="scissors" onClick="playerChoice('scissors')">Scissors</button>
+            <button id="rock" onClick="playerChoice('rock')"> <img src="https://em-content.zobj.net/source/microsoft/407/rock_1faa8.png"> Rock</button>
+            <button id="paper" onClick="playerChoice('paper')"> <img src="https://em-content.zobj.net/source/microsoft/407/page-facing-up_1f4c4.png"> Paper</button>
+            <button id="scissors" onClick="playerChoice('scissors')"> <img src="https://em-content.zobj.net/source/microsoft/407/scissors_2702-fe0f.png"> Scissors</button>
         </div>
 
+        
         <div class="choiceDisplay">
             <h2>Player's Choice: <span id="playerChoice"> </span></h2>
             <h2>Computer's Choice: <span id="computerChoice"> </span></h2>

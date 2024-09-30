@@ -60,3 +60,40 @@
 }
 
 
+.resultDisplay{
+    background-color: #a8a8a8;
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-left: 3px #505050 solid;
+    border-right: 3px #505050 solid;
+    border-bottom: 3px #505050 solid;
+}
+
+
+.buttonsDiv{
+    background-color: #505050;
+    width: 70%;
+    margin: auto;
+    border-left: 3px #505050 solid;
+    border-right: 3px #505050 solid;
+    border-bottom: 3px #505050 solid;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 250px;
+}
+.buttonsDiv button{
+    width: 100px;
+    font-size: 20px;
+    color: #505050;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buttonsDiv button img{
+    margin: auto;
+    height: 50px;
+    display: block;
+}
