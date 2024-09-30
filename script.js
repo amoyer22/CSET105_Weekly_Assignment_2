@@ -1,7 +1,8 @@
+let playerScore = 0
+let computerScore = 0
+let tiesScore = 0
+
 function playerChoice(choice){
-    let playerScoreDisplay = document.getElementById("playerScoreDisplay")
-    let computerScoreDisplay = document.getElementById("computerScoreDisplay")
-    let tiesScoreDisplay = document.getElementById("tiesScoreDisplay")
     let computerRNG = Math.floor(Math.random() * 3) + 1;
 
     if(choice === 'rock'){
@@ -28,25 +29,39 @@ function playerChoice(choice){
 
     if(document.getElementById("playerChoice").innerHTML === document.getElementById("computerChoice").innerHTML){
         document.getElementById("result").innerHTML = "Tie! 🪢"
+        tiesScore++
+        document.getElementById("tiesScoreDisplay").innerHTML = tiesScore
     }
 
     else if(document.getElementById("playerChoice").innerHTML === "Rock 🪨" && document.getElementById("computerChoice").innerHTML === "Scissors ✂️"){
         document.getElementById("result").innerHTML = "Player wins! ✅"
+        playerScore++
+        document.getElementById("playerScoreDisplay").innerHTML = playerScore
     }
     else if(document.getElementById("playerChoice").innerHTML === "Paper 📄" && document.getElementById("computerChoice").innerHTML === "Rock 🪨"){
         document.getElementById("result").innerHTML = "Player wins! ✅"
+        playerScore++
+        document.getElementById("playerScoreDisplay").innerHTML = playerScore
     }
     else if(document.getElementById("playerChoice").innerHTML === "Scissors ✂️" && document.getElementById("computerChoice").innerHTML === "Paper 📄"){
         document.getElementById("result").innerHTML = "Player wins! ✅"
+        playerScore++
+        document.getElementById("playerScoreDisplay").innerHTML = playerScore
     }
 
     else if(document.getElementById("playerChoice").innerHTML === "Rock 🪨" && document.getElementById("computerChoice").innerHTML === "Paper 📄"){
         document.getElementById("result").innerHTML = "Computer wins! 🚫"
+        computerScore++
+        document.getElementById("computerScoreDisplay").innerHTML = computerScore
     }
     else if(document.getElementById("playerChoice").innerHTML === "Paper 📄" && document.getElementById("computerChoice").innerHTML === "Scissors ✂️"){
         document.getElementById("result").innerHTML = "Computer wins! 🚫"
+        computerScore++
+        document.getElementById("computerScoreDisplay").innerHTML = computerScore
     }
     else if(document.getElementById("playerChoice").innerHTML === "Scissors ✂️" && document.getElementById("computerChoice").innerHTML === "Rock 🪨"){
         document.getElementById("result").innerHTML = "Computer wins! 🚫"
+        computerScore++
+        document.getElementById("computerScoreDisplay").innerHTML = computerScore
     }
 }
